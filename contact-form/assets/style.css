@@ -19,7 +19,7 @@ form, form textarea, button {
 .wrapper {
   width: 51%;
   margin: 40px auto;
-  padding: 40px 7.5%;
+  padding: 40px 5%;
   background-color: #E6E8E6; }
   @media (max-width: 768px) {
     .wrapper {
@@ -33,7 +33,8 @@ form, form textarea, button {
   font-size: 2em;
   margin: 0 0 5px 0; }
 .form-header p {
-  margin: 0; }
+  margin: 0;
+  line-height: 1.4em; }
 
 form {
   color: #979797; }

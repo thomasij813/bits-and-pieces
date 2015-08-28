@@ -35,7 +35,7 @@ $media-break-medium: 768px;
   @extend %border-radius;
   width: 51%;
   margin: 40px auto;
-  padding: 40px 7.5%;
+  padding: 40px 5%;
   background-color: $bg-color;
   @media (max-width: $media-break-medium ) {
     width: 75%;
@@ -53,6 +53,7 @@ $media-break-medium: 768px;
   }
   p {
     margin: 0;
+    line-height: 1.4em;
   }
 }
 
