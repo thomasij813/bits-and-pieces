@@ -76,19 +76,21 @@ form {
     height: 250px;
     padding-top: 14px;
   }
-}
-
-button {
-  @extend %margin-top;
-  @extend %border-radius;
-  min-height: 60px;
-  width: 100%;
-  background-color: $button-bg-color;
-  border: none;
-  color: #fff;
-  font-size: 2em;
-  transition: background-color 0.6s ease;
-  &:hover{
-    background-color: darken($button-bg-color, 20%);
+  .button {
+    @extend input;
+    @extend %margin-top;
+    min-height: 60px;
+    width: 100%;
+    background-color: $button-bg-color;
+    border: none;
+    color: #fff;
+    font-size: 2em;
+    transition: background-color 0.6s ease;
+    &:hover{
+      background-color: darken($button-bg-color, 20%);
+    }
+    @media (max-width: $media-break-small) {
+      font-size: 1.5em;
+    }
   }
 }

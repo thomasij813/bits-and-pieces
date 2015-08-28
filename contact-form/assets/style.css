@@ -4,10 +4,10 @@
   font-size: 1em;
   color: #0D3B66; }
 
-.wrapper, form input, form textarea, button {
+.wrapper, form input, form textarea, form .button {
   border-radius: 3px; }
 
-form, form textarea, button {
+form, form textarea, form .button {
   margin-top: 20px; }
 
 .preload * {
@@ -38,7 +38,7 @@ form, form textarea, button {
 
 form {
   color: #979797; }
-  form input, form textarea {
+  form input, form textarea, form .button {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -49,16 +49,18 @@ form {
   form textarea {
     height: 250px;
     padding-top: 14px; }
-
-button {
-  min-height: 60px;
-  width: 100%;
-  background-color: #F95738;
-  border: none;
-  color: #fff;
-  font-size: 2em;
-  transition: background-color 0.6s ease; }
-  button:hover {
-    background-color: #c52506; }
+  form .button {
+    min-height: 60px;
+    width: 100%;
+    background-color: #F95738;
+    border: none;
+    color: #fff;
+    font-size: 2em;
+    transition: background-color 0.6s ease; }
+    form .button:hover {
+      background-color: #c52506; }
+    @media (max-width: 400px) {
+      form .button {
+        font-size: 1.5em; } }
 
 /*# sourceMappingURL=style.css.map */
