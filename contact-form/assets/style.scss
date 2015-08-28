@@ -62,12 +62,13 @@ form {
   color: $input-border-color;
   input {
     @extend %border-radius;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 10px;
     width: 100%;
     height: 47px;
     border: 1px solid $input-border-color;
-    &::-webkit-input-placeholder{
-      padding-left: 10px;
-    }
   }
   textarea {
     @extend input;
