@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="assets/normalize.css">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
     <script src="assets/script.js"></script>
   </head>
   <body class="preload">
@@ -15,9 +16,10 @@
         <h1>Contact me</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros.</p>
       </div>
-      <form action="http://formspree.io/thomasij813@gmail.com" method="POST">
-        <input type="email" name="_replyto" placeholder="Your email address">
-        <textarea name="textarea" rows="10" cols="50" placeholder="Your message..."></textarea>
+      <div id="error_messages"></div>
+      <form name="contact_form" id="contact_form">
+        <input type="email" name="_replyto" placeholder="Your email address" required>
+        <textarea name="textarea" rows="10" cols="50" placeholder="Your message..." minlength="50" required></textarea>
         <input type="submit" value="Submit message" class="button">
       </form>
     </div>
