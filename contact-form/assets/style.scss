@@ -1,19 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
-$bg-color: #E6E8E6;
-$base-font-color: #0D3B66;
 $input-border-color: #979797;
 $button-bg-color: #F95738;
 
 $media-break-small: 400px;
 $media-break-medium: 768px;
-
-
-%font {
-  font-family: "Montserrat", sans-serif !important;
-  font-size: 16px !important;
-  color: $base-font-color !important;
-}
 
 %border-radius{
   border-radius: 3px;
@@ -31,12 +22,15 @@ $media-break-medium: 768px;
 }
 
 .wrapper {
-  @extend %font;
   @extend %border-radius;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 16px !important;
+  color: #0D3B66 !important;
   width: 60%;
+  max-width: 550px;
   margin: 40px auto;
   padding: 40px 5%;
-  background-color: $bg-color;
+  background-color: #E6E8E6;
   @media (max-width: $media-break-medium ) {
     width: 75%;
   }
@@ -49,7 +43,7 @@ $media-break-medium: 768px;
 .form-header{
   h1 {
     font-size: 2em;
-    margin: 0 0 5px 0;
+    margin: 0 0 15px 0;
   }
   p {
     margin: 0;
@@ -58,7 +52,7 @@ $media-break-medium: 768px;
 }
 
 form {
-  @extend %margin-top;
+  margin-top: 40px;
   color: $input-border-color;
   input {
     @extend %border-radius;
